@@ -1,6 +1,6 @@
 import java.util.Scanner;
 Public class Hobbies{
-
+public static int gethobbyString() {
  Scanner in = new Scanner(System.in);
 
         System.out.println("Please type the number for your first hobby out of the list: ");
@@ -54,7 +54,7 @@ Public class Hobbies{
                 hobby1String = "Invalid hobby";
         }
         System.out.println("You have chosen " + hobbyString + " and " + hobby1String + ".");
-        
+         return hobby;
     }
     
-    
+   } 
