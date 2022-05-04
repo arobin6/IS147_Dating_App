@@ -33,6 +33,8 @@ public class Main {
         System.out.println("Gender: "+gender);
         System.out.println("Sexuality: "+sex);
         System.out.println("State: "+state);
-
+        
+ int returnedhobbyString =
+                Hobbies.gethobbyString();
     }
 }
