@@ -3,6 +3,7 @@ package com.company;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Before you proceed, please complete the captcha below.");
         Captcha captcha;
         Scanner scanner = new Scanner(System.in);
         int userInput;
