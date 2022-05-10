@@ -24,53 +24,17 @@ public class Main {
                 {
                     System.out.println("Welcome to the IS147 Dating App ");
                     System.out.println("Have you ever had trouble meeting new people with similar interests on college campus?" +
-                            "Or are you a social butterfly just searching to meet new people. With this college dating app, you can!" +
-                            "This app allows college students to meet people based on their location, interests, and more. Unlike" +
-                            "other dating apps, this app is tailored more specific in finding the person for you. It is streamlined," +
-                            "easy to use, and has options that fit every type of person. ");
+                            " Or are you a social butterfly just searching to meet new people. With this college dating app, you can!" +
+                            " This app allows college students to meet people based on their location, interests, and more. Unlike" +
+                            " other dating apps, this app is tailored more specific in finding the person for you. It is streamlined," +
+                            " easy to use, and has options that fit every type of person. ");
 
 
-                    System.out.println("Before we get started,please answer the following question below");
-                    Scanner userInput1 = new Scanner(System.in);
-                    System.out.println("Name?:");
-                    String name = userInput1.nextLine();
-                    System.out.println(" Age?:");
-                    String age = userInput1.nextLine();
-                    System.out.println("School or University:");
-                    String Uni = userInput1.nextLine();
-                    System.out.println("Gender?:");
-                    String gender = userInput1.nextLine();
-                    System.out.println("Sexuality?:");
-                    String sex = userInput1.nextLine();
-                    System.out.println("State you live in?:");
-                    String state = userInput1.nextLine();
-                    System.out.println("What is your occupation:");
-                    String occupation = userInput1.nextLine();
-                    System.out.println("What is your biggest pet peeve?:");
-                    String petpeeve = userInput1.nextLine();
-                    System.out.println("How many relationships have you been in?:");
-                    String pastrelationship = userInput1.nextLine();
-                    System.out.println("Are you looking for something casual, serious or in between?:");
-                    String relationshipdesire = userInput1.nextLine();
-                    System.out.println("What is your idea of a first date?:");
-                    String datepreference = userInput1.nextLine();
-                    int returnedhobbyString =
-                            Hobbies.gethobbyString();
 
-                    System.out.println("Your Dating Profile Information " );
-                    System.out.println("--------------------------------" );
-                    System.out.println("Name: " + name);
-                    System.out.println("Age: " + age);
-                    System.out.println("School: " + Uni);
-                    System.out.println("Gender: " + gender);
-                    System.out.println("Sexuality: " + sex);
-                    System.out.println("State: " + state);
-                    System.out.println("Occupation:" +occupation);
-                    System.out.println("Petpeeve:" +petpeeve);
-                    System.out.println("Number of previous relationship:" +pastrelationship);
-                    System.out.println("Relationship Desire: " +relationshipdesire);
-                    System.out.println("Idea of a first date:" +datepreference);
+                    int returnedQuestionString =
+                            Question.getQuestionString();
+
+
                 }
             }
         }
-
