@@ -2,6 +2,7 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
+
         System.out.println("Before you proceed, please complete the captcha below.");
         Captcha captcha;
         Scanner scanner = new Scanner(System.in);
@@ -43,18 +44,32 @@ public class Main {
                     String sex = userInput1.nextLine();
                     System.out.println("State you live in?:");
                     String state = userInput1.nextLine();
-                    System.out.println("***************************************");
+                    System.out.println("What is your occupation:");
+                    String occupation = userInput1.nextLine();
+                    System.out.println("What is your biggest pet peeve?:");
+                    String petpeeve = userInput1.nextLine();
+                    System.out.println("How many relationships have you been in?:");
+                    String pastrelationship = userInput1.nextLine();
+                    System.out.println("Are you looking for something casual, serious or in between?:");
+                    String relationshipdesire = userInput1.nextLine();
+                    System.out.println("What is your idea of a first date?:");
+                    String datepreference = userInput1.nextLine();
+                    int returnedhobbyString =
+                            Hobbies.gethobbyString();
 
+                    System.out.println("Your Dating Profile Information " );
+                    System.out.println("--------------------------------" );
                     System.out.println("Name: " + name);
                     System.out.println("Age: " + age);
                     System.out.println("School: " + Uni);
                     System.out.println("Gender: " + gender);
                     System.out.println("Sexuality: " + sex);
                     System.out.println("State: " + state);
-
-                    int returnedhobbyString =
-                            Hobbies.gethobbyString();
-
+                    System.out.println("Occupation:" +occupation);
+                    System.out.println("Petpeeve:" +petpeeve);
+                    System.out.println("Number of previous relationship:" +pastrelationship);
+                    System.out.println("Relationship Desire: " +relationshipdesire);
+                    System.out.println("Idea of a first date:" +datepreference);
                 }
             }
         }
