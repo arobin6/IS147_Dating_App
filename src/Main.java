@@ -8,16 +8,16 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int userInput;
 
-        while (true) {
-            captcha = new Captcha();
-            System.out.println(captcha.getQuestion());
-            userInput = scanner.nextInt();
+        while (true) { // infinite loop
+            captcha = new Captcha(); // create new instance
+            System.out.println(captcha.getQuestion());// print captcha question
+            userInput = scanner.nextInt();// take input from user
             try {
-                captcha.runCheck(userInput);
+                captcha.runCheck(userInput);// call run check
                 System.out.println("Congratulations! CAPTCHA solved successfully!");
-                break;
+                break; // break infinite loop
             } catch (InvalidCAPTCHAException e) {
-                System.out.println(e.getMessage());
+                System.out.println(e.getMessage());// in case of failure print error message and dont break loop
             }
         }
 
@@ -34,7 +34,16 @@ public class Main {
                     int returnedQuestionString =
                             Question.getQuestionString();
 
+                    String returnedZodiacString =
+                            Zodiacs.getZodiacsString();
 
+                    String returnedgetAddressString =
+                            Address.getAddressString();
+
+                    java.util.Date date = new java.util.Date();
+                    System.out.println("Created on:" + date.toString());
+                    System.out.println("*************************");
+                    System.out.println("THE END");
                 }
             }
         }
