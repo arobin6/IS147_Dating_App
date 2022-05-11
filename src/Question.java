@@ -84,25 +84,24 @@ public class Question {
                 hobby1String = "Invalid hobby";
         }
 
-
-        System.out.println( " " );
-        System.out.println( name+"'s Dating Profile Information " );
-        System.out.println("--------------------------------" );
+        System.out.println(" ");
+        System.out.println(name + "'s Dating Profile Information ");
+        System.out.println("--------------------------------");
         System.out.println("Age: " + age);
         System.out.println("School: " + Uni);
         System.out.println("Gender: " + gender);
         System.out.println("Sexuality: " + sex);
         System.out.println("State: " + state);
         System.out.println("You're Hobbies are: " + hobbyString + " and " + hobby1String + ".");
-        System.out.println("Occupation:" +occupation);
-        System.out.println("Petpeeve:" +petpeeve);
-        System.out.println("Number of previous relationship:" +pastrelationship);
-        System.out.println("Relationship Desire: " +relationshipdesire);
-        System.out.println("Idea of a first date:" +datepreference);
+        System.out.println("Occupation:" + occupation);
+        System.out.println("Petpeeve:" + petpeeve);
+        System.out.println("Number of previous relationship:" + pastrelationship);
+        System.out.println("Relationship Desire: " + relationshipdesire);
+        System.out.println("Idea of a first date:" + datepreference);
         System.out.println("----------------------------------");
-        java.util.Date date = new java.util.Date();
-        System.out.println("Created on:" +date.toString());
 
-        return hobby;
+
+
+                return hobby;
+        }
     }
-}
